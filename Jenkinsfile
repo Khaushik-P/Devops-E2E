@@ -7,10 +7,8 @@ pipeline{
         stage('Git checkout'){
             steps{
                 script{
-                    gitCheckout(
-                         branch: 'main',
-                         url: 'https://github.com/Khaushik-P/Devops-E2E.git'
-                    )
+                   git branch: 'main' url: 'https://github.com/Khaushik-P/Devops-E2E.git'
+                    
                 }
             }
             }
