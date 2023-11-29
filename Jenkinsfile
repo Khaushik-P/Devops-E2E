@@ -49,7 +49,7 @@ pipeline{
         //         }
         //         }
         //     }
-        stage('Maven Build'){
+        stage('Maven Build: maven'){
             when{ expression { params.action == 'create'}}
             steps{
                 script{
