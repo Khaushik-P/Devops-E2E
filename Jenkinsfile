@@ -4,7 +4,7 @@ pipeline{
     agent any
 
     stages{
-        stage('Git Checkout'){
+        stage('Git checkout'){
             steps{
                 script{
                     gitCheckout(
@@ -16,7 +16,6 @@ pipeline{
             }
         stage('Unit test Maven'){
             steps{
-                dir('/var/lib/jenkins/workspace/Devops-E2E/mrdevops_java_app'){
                 script{
                    mvnTest()
                 }
