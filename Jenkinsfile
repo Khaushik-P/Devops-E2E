@@ -5,7 +5,7 @@ pipeline{
 
 
     parameters{
-        choices:[name:'action' , choices:create\ndelete, description: 'Choose create/Destroy']
+        choices:[name:'action' , choices:'create\ndelete', description: 'Choose create/Destroy']
     }
     stages{
         stage('Git Checkout'){
