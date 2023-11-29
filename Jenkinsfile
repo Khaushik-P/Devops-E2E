@@ -16,7 +16,7 @@ pipeline{
             }
         stage('Unit test Maven'){
             steps{
-                dir('/var/jenkins_home/workspace/Devops-E2E/mrdevops_java_app'){
+                dir('/var/lib/jenkins/workspace/Devops-E2E/mrdevops_java_app'){
                 script{
                    mvnTest()
                 }
